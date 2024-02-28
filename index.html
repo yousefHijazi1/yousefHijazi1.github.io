@@ -7,6 +7,7 @@
     <meta name="author" content="Devcrud">
     <link rel="icon" type="image/png" href="./assets/imgs/icon.png">
     <title>Yousef Hijazi Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font icons -->
     <link rel="stylesheet" href="./assets/vendors/themify-icons/css/themify-icons.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
@@ -41,7 +42,7 @@
     </nav><!-- End of Page Navbar -->
 
     <!-- page header -->
-    <header id="home" class="header">
+    <header id="home" class="header" data-aos="fade-down">
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
@@ -54,7 +55,7 @@
     </header><!-- end of page header -->
 
     <!-- about section -->
-    <section class="section pt-0" id="about">
+    <section class="section pt-0" id="about" data-aos="fade-right">
         <!-- container -->
         <div class="container text-center">
             <!-- about wrapper -->
@@ -75,7 +76,7 @@
     </section> <!-- end of about section -->
 
     <!-- blog section -->
-    <section class="section" id="blog">
+    <section class="section" id="blog" data-aos="fade-left">
         <!-- container -->
         <div class="container text-center">
             <!-- <p class="section-subtitle">Recent Posts?</p> -->
@@ -102,7 +103,7 @@
         </div><!-- end of container -->
     </section><!-- end of blog section -->
 
-    <section class="section">
+    <section class="section" data-aos="zoom-in-up">
         <div class="container">
             <h6 class="section-title mb-6">Technical Skills</h6>
             <div class="skill-box">
@@ -138,13 +139,16 @@
         </div>
     </section>
     <!-- portfolio section -->
-    <section class="section" id="portfolio">
+    <section class="section" id="portfolio" data-aos="fade-up" data-aos-duration="1500">
         <div class="container text-center">
             <p class="section-subtitle">What I Did ?</p>
             <h6 class="section-title mb-6">Portfolio</h6>
             <!-- row -->
             <div class="row">
-                <div class="col-md-4" style="border: 10px;">
+                <div class="col-md-4" style="border: 10px;" data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1000">
                     <a href="https://ncmfd.org.lb/" class="portfolio-card">
                         <img src="assets/imgs/ncmfd.png" class="portfolio-card-img"  >    
                         <span class="portfolio-card-overlay">
@@ -156,7 +160,10 @@
                                 </span>                     
                             </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1000">
                     <a href="https://github.com/yousefHijazi1/Hospital-Management-System" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/hms.png" class="img-responsive rounded" >
                         <span class="portfolio-card-overlay">
@@ -167,7 +174,10 @@
                         </span>                         
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="1000">
                     <a href="https://github.com/yousefHijazi1/Vue.js-Laravel-CRUD-with-Auth" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/laravel_vue.png" class="img-responsive rounded" >    
                         <span class="portfolio-card-overlay">
@@ -205,6 +215,9 @@
 
 
     <script src="assets/js/script.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
