@@ -9,7 +9,7 @@
     <title>Yousef Hijazi Portfolio</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font icons -->
-    <!-- <link rel="stylesheet" href="./assets/vendors/themify-icons/css/themify-icons.css"> -->
+    <link rel="stylesheet" href="./assets/vendors/themify-icons/css/themify-icons.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/skill.css">
 </head>
@@ -44,7 +44,7 @@
     <!-- page header -->
     <header id="home" class="header" >
         <div class="overlay"></div>
-        <div class="header-content container">
+        <div class="header-content container" data-aos="fade-down">
             <h1 class="header-title">
                 <span class="up">Hello !</span>
                 <span class="down">I am Yousef Hijazi</span>
@@ -55,9 +55,9 @@
     </header><!-- end of page header -->
 
     <!-- about section -->
-    <section class="section pt-0" id="about" >
+    <section class="section pt-0" id="about" data-aos="fade-up-right" >
         <!-- container -->
-        <div class="container text-center">
+        <div class="container text-center" >
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
@@ -76,9 +76,9 @@
     </section> <!-- end of about section -->
 
     <!-- blog section -->
-    <section class="section" id="blog">
+    <section class="section" id="blog" data-aos="zoom-in">
         <!-- container -->
-        <div class="container text-center">
+        <div class="container text-center"  >
             <!-- <p class="section-subtitle">Recent Posts?</p> -->
             <h6 class="section-title mb-6">Education Certificate</h6>
             <!-- blog-wrapper -->
@@ -103,7 +103,7 @@
         </div><!-- end of container -->
     </section><!-- end of blog section -->
 
-    <section class="section" >
+    <section class="section" data-aos="flip-left" >
         <div class="container">
             <h6 class="section-title mb-6">Technical Skills</h6>
             <div class="skill-box">
@@ -145,10 +145,7 @@
             <h6 class="section-title mb-6">Portfolio</h6>
             <!-- row -->
             <div class="row">
-                <div class="col-md-4" style="border: 10px;" 
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-duration="1000">
+                <div class="col-md-4" data-aos="fade-right">
                     <a href="https://ncmfd.org.lb/" class="portfolio-card">
                         <img src="assets/imgs/ncmfd.png" class="portfolio-card-img"  >    
                         <span class="portfolio-card-overlay">
@@ -160,7 +157,7 @@
                                 </span>                     
                             </a>
                 </div>
-                <div class="col-md-4" >
+                <div class="col-md-4" data-aos="fade-up">
                     <a href="https://github.com/yousefHijazi1/Hospital-Management-System" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/hms.png" class="img-responsive rounded" >
                         <span class="portfolio-card-overlay">
@@ -171,7 +168,7 @@
                         </span>                         
                     </a>
                 </div>
-                <div class="col-md-4" >
+                <div class="col-md-4" data-aos="fade-down">
                     <a href="https://github.com/yousefHijazi1/Vue.js-Laravel-CRUD-with-Auth" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/laravel_vue.png" class="img-responsive rounded" >    
                         <span class="portfolio-card-overlay">
@@ -209,9 +206,9 @@
 
 
     <script src="assets/js/script.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script> -->
+    </script>
 </body>
 </html>

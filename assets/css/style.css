@@ -12207,6 +12207,7 @@ pre .code {
 }
 
 /* sections */
+/* sections */
 .section {
   padding: 70px 10px;
 }
@@ -12223,6 +12224,14 @@ pre .code {
 
 .section-sm {
   padding: 40px 0 !important;
+}
+
+.section-md {
+  padding: 60px 0 !important;
+}
+
+.section-lg {
+  padding: 100px 0 !important;
 }
 
 .section-md {
